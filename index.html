@@ -71,6 +71,57 @@ footer.site{background:var(--navy);color:rgba(255,255,255,.75);border-top:3px so
 .pay-brand{background:linear-gradient(135deg,#0ba4db,#0a7fa8);color:#fff;border-radius:.8rem;padding:1rem}
 .secure{font-size:.78rem;color:#5b6b7c}
 .form-control:focus,.form-select:focus{border-color:var(--gold);box-shadow:0 0 0 .2rem rgba(212,175,55,.3)}
+.topbar{background:#08182a;color:rgba(255,255,255,.82);font-size:.8rem}
+.topbar a{color:var(--gold);text-decoration:none}
+.navbar-lc .dropdown-menu{border:0;border-top:3px solid var(--gold);box-shadow:0 10px 28px rgba(13,35,58,.2)}
+.navbar-lc .dropdown-item{font-weight:500;color:var(--navy);padding:.55rem 1rem}
+.navbar-lc .dropdown-item:hover{background:rgba(212,175,55,.18)}
+.page-hero{background:linear-gradient(135deg,rgba(13,35,58,.97),rgba(22,55,90,.93)),repeating-linear-gradient(45deg,#0d233a 0 14px,#102a45 14px 28px);color:#fff;padding:3rem 0;border-bottom:4px solid var(--gold)}
+.page-hero h1{font-size:clamp(1.8rem,5vw,2.8rem)}
+.page-hero p{color:rgba(255,255,255,.8);max-width:640px;margin-bottom:0}
+.navy-band{background:var(--navy);color:#fff}
+.navy-band .num{font-family:'Playfair Display',serif;font-size:clamp(1.8rem,5vw,2.6rem);color:var(--gold);font-weight:700;line-height:1}
+.navy-band small{color:rgba(255,255,255,.75)}
+.prog-card{background:#fff;border-radius:1rem;box-shadow:0 4px 18px rgba(13,35,58,.08);padding:1.5rem;height:100%;border-top:4px solid var(--gold);transition:transform .2s}
+.prog-card:hover{transform:translateY(-4px)}
+.prog-card .ic{font-size:2rem}
+.prog-card h3{font-size:1.15rem;color:var(--navy)}
+.quote{background:#fff;border-radius:1rem;padding:1.5rem;box-shadow:0 4px 18px rgba(13,35,58,.08);height:100%;position:relative}
+.quote::before{content:"\201C";font-family:'Playfair Display',serif;font-size:4rem;color:var(--gold);position:absolute;top:-.2rem;left:1rem;line-height:1}
+.quote p{padding-top:1.4rem;font-style:italic;color:#445566}
+.news-card{background:#fff;border-radius:1rem;overflow:hidden;box-shadow:0 4px 18px rgba(13,35,58,.08);height:100%;display:flex;flex-direction:column}
+.news-thumb{height:130px;display:grid;place-items:center;font-size:2.8rem;background:linear-gradient(135deg,var(--navy),var(--navy-2))}
+.news-card .body{padding:1.25rem;flex:1;display:flex;flex-direction:column}
+.tag{display:inline-block;background:rgba(212,175,55,.2);color:#7a5d00;border-radius:2rem;padding:.15rem .7rem;font-size:.72rem;font-weight:700;text-transform:uppercase;letter-spacing:.05em}
+.event-item{display:flex;gap:1rem;align-items:center;background:#fff;border-radius:.8rem;padding:.8rem 1rem;box-shadow:0 3px 12px rgba(13,35,58,.07);margin-bottom:.8rem}
+.event-date{background:var(--navy);color:#fff;border-radius:.6rem;min-width:56px;text-align:center;padding:.4rem .3rem;line-height:1.1;flex:none}
+.event-date b{display:block;font-size:1.3rem;color:var(--gold)}
+.event-date small{font-size:.68rem;text-transform:uppercase;letter-spacing:.08em}
+.steps{counter-reset:s;list-style:none;padding:0;margin:0}
+.steps li{counter-increment:s;position:relative;padding:0 0 1.4rem 3.4rem}
+.steps li::before{content:counter(s);position:absolute;left:0;top:0;width:2.5rem;height:2.5rem;border-radius:50%;background:var(--gold);color:var(--navy);font-weight:800;display:grid;place-items:center}
+.steps li::after{content:"";position:absolute;left:1.2rem;top:2.6rem;bottom:.1rem;width:2px;background:rgba(13,35,58,.15)}
+.steps li:last-child::after{display:none}
+.team-card{background:#fff;border-radius:1rem;padding:1.4rem;text-align:center;box-shadow:0 4px 18px rgba(13,35,58,.08);height:100%}
+.team-card .avatar{margin:0 auto 1rem;width:80px;height:80px}
+.value{border-left:4px solid var(--gold);background:#fff;border-radius:.6rem;padding:1rem 1.2rem;box-shadow:0 3px 12px rgba(13,35,58,.06);height:100%}
+.gal-tile{border:0;border-radius:1rem;aspect-ratio:4/3;width:100%;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#fff;font-size:2.8rem;box-shadow:0 4px 16px rgba(13,35,58,.15);transition:transform .2s}
+.gal-tile:hover{transform:scale(1.03)}
+.gal-tile span{font-size:.85rem;font-weight:600;margin-top:.4rem;padding:0 .5rem;text-align:center}
+.filter-btn.active{background:var(--navy);color:#fff;border-color:var(--navy)}
+.accordion-button:not(.collapsed){background:rgba(212,175,55,.18);color:var(--navy)}
+.accordion-button:focus{box-shadow:0 0 0 .2rem rgba(212,175,55,.3)}
+.contact-box{background:#fff;border-radius:1rem;padding:1.2rem;box-shadow:0 4px 18px rgba(13,35,58,.08);display:flex;gap:1rem;align-items:flex-start}
+.contact-box .ic{font-size:1.5rem;width:46px;height:46px;border-radius:50%;background:rgba(212,175,55,.2);display:grid;place-items:center;flex:none}
+.cta-band{background:linear-gradient(135deg,var(--gold),#e8c95a);color:var(--navy)}
+footer.site a{color:rgba(255,255,255,.75);text-decoration:none}
+footer.site a:hover{color:var(--gold)}
+footer.site h4{font-size:1rem;color:var(--gold);font-family:'Inter',sans-serif;font-weight:700;text-transform:uppercase;letter-spacing:.08em}
+.float-wa{position:fixed;right:16px;bottom:16px;z-index:1040;background:#25d366;color:#fff;width:56px;height:56px;border-radius:50%;display:grid;place-items:center;font-size:1.6rem;box-shadow:0 6px 18px rgba(0,0,0,.3);text-decoration:none}
+.float-wa:hover{color:#fff;transform:scale(1.06)}
+.back-top{position:fixed;right:20px;bottom:84px;z-index:1040;width:44px;height:44px;border-radius:50%;border:2px solid var(--gold);background:var(--navy);color:var(--gold);font-weight:700;display:none}
+.back-top.show{display:block}
+.fee-bar{height:.7rem;border-radius:1rem}
 @media (max-width:575.98px){
  .hero{padding:2.5rem 0 6.5rem}
  .report-table{font-size:.85rem}
@@ -88,7 +139,14 @@ footer.site{background:var(--navy);color:rgba(255,255,255,.75);border-top:3px so
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-lc sticky-top no-print">
+<div class="topbar no-print" id="topbar">
+ <div class="container py-2 d-flex justify-content-between align-items-center gap-2">
+  <span>📢 <strong>2026/2027 admissions are open.</strong> <a href="#admissions" onclick="showView('admissions-view');return false;">Apply now →</a></span>
+  <span class="d-none d-md-inline">📞 +234 800 000 0000 &nbsp;|&nbsp; ✉️ info@lagooncrest.example</span>
+  <button class="btn-close btn-close-white btn-sm d-md-none" aria-label="Dismiss announcement" onclick="document.getElementById('topbar').remove()"></button>
+ </div>
+</div>
+<nav class="navbar navbar-expand-xl navbar-lc sticky-top no-print">
  <div class="container">
   <a class="navbar-brand" href="#" onclick="showView('landing-view');return false;" aria-label="Lagoon Crest Schools home">
    <span class="crest">LC</span>
@@ -99,10 +157,21 @@ footer.site{background:var(--navy);color:rgba(255,255,255,.75);border-top:3px so
   </button>
   <div class="collapse navbar-collapse" id="mainNav">
    <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1 pt-2 pt-lg-0">
-    <li class="nav-item"><a class="nav-link" data-nav="landing-view" href="#" onclick="showView('landing-view');return false;">🏠 Home</a></li>
-    <li class="nav-item"><a class="nav-link" data-nav="portal-view" href="#" onclick="showView('portal-view');return false;">🎓 Student Portal</a></li>
-    <li class="nav-item"><a class="nav-link" data-nav="teacher-view" href="#" onclick="showView('teacher-view');return false;">📝 Teacher Dashboard</a></li>
-    <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><button class="btn btn-gold btn-sm px-3 w-100" data-bs-toggle="modal" data-bs-target="#payModal">💳 Pay Fees</button></li>
+    <li class="nav-item"><a class="nav-link" data-nav="landing-view" href="#" onclick="showView('landing-view');return false;">Home</a></li>
+    <li class="nav-item"><a class="nav-link" data-nav="about-view" href="#about" onclick="showView('about-view');return false;">About</a></li>
+    <li class="nav-item"><a class="nav-link" data-nav="academics-view" href="#academics" onclick="showView('academics-view');return false;">Academics</a></li>
+    <li class="nav-item"><a class="nav-link" data-nav="admissions-view" href="#admissions" onclick="showView('admissions-view');return false;">Admissions</a></li>
+    <li class="nav-item"><a class="nav-link" data-nav="news-view" href="#news" onclick="showView('news-view');return false;">News &amp; Events</a></li>
+    <li class="nav-item"><a class="nav-link" data-nav="gallery-view" href="#gallery" onclick="showView('gallery-view');return false;">Gallery</a></li>
+    <li class="nav-item"><a class="nav-link" data-nav="contact-view" href="#contact" onclick="showView('contact-view');return false;">Contact</a></li>
+    <li class="nav-item dropdown">
+     <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Portals</a>
+     <ul class="dropdown-menu">
+      <li><a class="dropdown-item" href="#portal" onclick="showView('portal-view');return false;">🎓 Student / Parent Portal</a></li>
+      <li><a class="dropdown-item" href="#teacher" onclick="showView('teacher-view');return false;">📝 Teacher Dashboard</a></li>
+     </ul>
+    </li>
+    <li class="nav-item ms-xl-2 mt-2 mt-xl-0"><button class="btn btn-gold btn-sm px-3 w-100" data-bs-toggle="modal" data-bs-target="#payModal">💳 Pay Fees</button></li>
    </ul>
   </div>
  </div>
@@ -161,9 +230,55 @@ footer.site{background:var(--navy);color:rgba(255,255,255,.75);border-top:3px so
   </div>
  </section>
 
- <footer class="site py-4 text-center small">
-  <div class="container">© 2026 Lagoon Crest Schools, Badagry. Prototype for demonstration purposes.</div>
- </footer>
+ <section class="navy-band py-5">
+  <div class="container">
+   <div class="row g-4 text-center">
+    <div class="col-6 col-md-3"><div class="num">25+</div><small>Years of excellence</small></div>
+    <div class="col-6 col-md-3"><div class="num">1,200</div><small>Students enrolled</small></div>
+    <div class="col-6 col-md-3"><div class="num">98%</div><small>WAEC / NECO credit pass rate</small></div>
+    <div class="col-6 col-md-3"><div class="num">15:1</div><small>Student-teacher ratio</small></div>
+   </div>
+  </div>
+ </section>
+
+ <section class="container py-5">
+  <h2 class="section-title text-center mb-5">Our Programmes</h2>
+  <div class="row g-3 g-md-4">
+   <div class="col-12 col-sm-6 col-lg-3"><div class="prog-card"><div class="ic">🧸</div><h3>Nursery</h3><p class="text-secondary mb-0">Play-based early learning for ages 2–5 in a safe, nurturing space.</p></div></div>
+   <div class="col-12 col-sm-6 col-lg-3"><div class="prog-card"><div class="ic">📚</div><h3>Primary</h3><p class="text-secondary mb-0">Strong foundations in literacy, numeracy, science and character.</p></div></div>
+   <div class="col-12 col-sm-6 col-lg-3"><div class="prog-card"><div class="ic">🔬</div><h3>Junior Secondary</h3><p class="text-secondary mb-0">Broad curriculum, STEM clubs and preparation for the BECE.</p></div></div>
+   <div class="col-12 col-sm-6 col-lg-3"><div class="prog-card"><div class="ic">🎓</div><h3>Senior Secondary</h3><p class="text-secondary mb-0">Science, Arts and Commercial tracks with WAEC, NECO and UTME coaching.</p></div></div>
+  </div>
+  <div class="text-center mt-4"><button class="btn btn-navy" onclick="showView('academics-view')">Explore Academics →</button></div>
+ </section>
+
+ <section class="py-5" style="background:#fff">
+  <div class="container">
+   <h2 class="section-title text-center mb-5">What Parents Say</h2>
+   <div class="row g-3 g-md-4">
+    <div class="col-12 col-md-4"><div class="quote"><p>The online results and fee receipts save me a trip to school every term. Everything is clear and instant.</p><strong>Mrs. Ngozi Okafor</strong><br><small class="text-secondary">Parent, SSS 2</small></div></div>
+    <div class="col-12 col-md-4"><div class="quote"><p>My son's confidence and grades have both grown. The teachers know every child by name.</p><strong>Mr. Ibrahim Lawal</strong><br><small class="text-secondary">Parent, JSS 1</small></div></div>
+    <div class="col-12 col-md-4"><div class="quote"><p>Lagoon Crest prepared me for university. The WAEC coaching and mentorship were outstanding.</p><strong>Temitope A.</strong><br><small class="text-secondary">Alumna, Class of 2024</small></div></div>
+   </div>
+  </div>
+ </section>
+
+ <section class="container py-5">
+  <div class="d-flex justify-content-between align-items-end flex-wrap gap-2 mb-4">
+   <h2 class="h3 mb-0" style="color:var(--navy)">Latest News</h2>
+   <a href="#news" class="fw-semibold" style="color:var(--navy)" onclick="showView('news-view');return false;">View all →</a>
+  </div>
+  <div class="row g-3 g-md-4" id="home-news"></div>
+ </section>
+
+ <section class="cta-band py-5 text-center">
+  <div class="container">
+   <h2 class="h2 mb-2">Give your child a place among the best.</h2>
+   <p class="mb-4">Applications for the 2026/2027 session are now open.</p>
+   <button class="btn btn-navy btn-lg px-4 me-2 mb-2" onclick="showView('admissions-view')">Apply Online</button>
+   <button class="btn btn-outline-dark btn-lg px-4 mb-2" onclick="showView('contact-view')">Book a Campus Tour</button>
+  </div>
+ </section>
 </main>
 
 <!-- PORTAL -->
@@ -220,6 +335,41 @@ footer.site{background:var(--navy);color:rgba(255,255,255,.75);border-top:3px so
    <button class="btn btn-gold btn-lg px-4 w-100 w-sm-auto shadow-sm" onclick="downloadReport()">📥 Download Official PDF Report Card</button>
    <p class="small text-secondary mt-2">Choose "Save as PDF" in the print dialog.</p>
   </div>
+
+  <div class="row g-3 g-md-4 mt-2 no-print">
+   <div class="col-12 col-lg-4">
+    <section class="card-lc h-100">
+     <div class="card-header"><h3 class="h6 mb-0" style="color:var(--navy)">💳 Fee Statement</h3></div>
+     <div class="card-body">
+      <div class="d-flex justify-content-between small"><span>Tuition (3rd Term)</span><strong>₦185,000</strong></div>
+      <div class="d-flex justify-content-between small"><span>Paid</span><strong class="text-success">₦185,000</strong></div>
+      <div class="progress fee-bar my-2"><div class="progress-bar bg-success" style="width:100%"></div></div>
+      <div class="d-flex justify-content-between small mb-3"><span>Balance</span><strong>₦0</strong></div>
+      <button class="btn btn-outline-dark btn-sm w-100" data-bs-toggle="modal" data-bs-target="#payModal">Pay Next Term in Advance</button>
+     </div>
+    </section>
+   </div>
+   <div class="col-12 col-lg-4">
+    <section class="card-lc h-100">
+     <div class="card-header"><h3 class="h6 mb-0" style="color:var(--navy)">🗓️ Attendance</h3></div>
+     <div class="card-body">
+      <div class="display-6 fw-bold" style="color:var(--navy)">96%</div>
+      <div class="progress fee-bar my-2"><div class="progress-bar" style="width:96%;background:var(--gold)"></div></div>
+      <p class="small text-secondary mb-0">Present 62 of 65 school days. Absent 2, late 1.</p>
+     </div>
+    </section>
+   </div>
+   <div class="col-12 col-lg-4">
+    <section class="card-lc h-100">
+     <div class="card-header"><h3 class="h6 mb-0" style="color:var(--navy)">📢 Notices</h3></div>
+     <div class="card-body small">
+      <p class="mb-2"><strong>Inter-House Sports:</strong> 24 Oct. Wear house colours.</p>
+      <p class="mb-2"><strong>Mid-term break:</strong> 26 to 30 Oct.</p>
+      <p class="mb-0"><strong>SSS 3 mock exams</strong> begin 9 Nov. Timetable is on the news page.</p>
+     </div>
+    </section>
+   </div>
+  </div>
  </div>
 </main>
 
@@ -275,6 +425,284 @@ footer.site{background:var(--navy);color:rgba(255,255,255,.75);border-top:3px so
   </section>
  </div>
 </main>
+
+<!-- ABOUT -->
+<main id="about-view" class="view">
+ <section class="page-hero"><div class="container"><div class="eyebrow mb-2">About Us</div><h1>A legacy of learning on the Badagry coast</h1><p>Founded in 2001, Lagoon Crest Schools has grown from a small nursery into a leading co-educational school, built on discipline, curiosity and service.</p></div></section>
+ <div class="container py-5">
+  <div class="row g-4 mb-5">
+   <div class="col-12 col-md-6"><div class="card-lc h-100 p-4"><h2 class="h4" style="color:var(--navy)">🎯 Our Mission</h2><p class="mb-0 text-secondary">To nurture confident, ethical and capable young people through a rigorous curriculum, dedicated teachers and a caring community.</p></div></div>
+   <div class="col-12 col-md-6"><div class="card-lc h-100 p-4"><h2 class="h4" style="color:var(--navy)">🔭 Our Vision</h2><p class="mb-0 text-secondary">To be the school of choice in Lagos State, producing global-minded leaders who give back to Nigeria.</p></div></div>
+  </div>
+
+  <h2 class="section-title text-center mb-4">Core Values</h2>
+  <div class="row g-3 mb-5">
+   <div class="col-6 col-lg-3"><div class="value"><strong>Integrity</strong><br><small class="text-secondary">Honesty in all we do.</small></div></div>
+   <div class="col-6 col-lg-3"><div class="value"><strong>Excellence</strong><br><small class="text-secondary">Aiming high, always.</small></div></div>
+   <div class="col-6 col-lg-3"><div class="value"><strong>Respect</strong><br><small class="text-secondary">For self, others and culture.</small></div></div>
+   <div class="col-6 col-lg-3"><div class="value"><strong>Service</strong><br><small class="text-secondary">Leading by helping.</small></div></div>
+  </div>
+
+  <div class="row g-4 align-items-center mb-5">
+   <div class="col-12 col-md-4 text-center"><div class="avatar mx-auto" style="width:120px;height:120px;font-size:2.4rem">FA</div></div>
+   <div class="col-12 col-md-8">
+    <h2 class="h4" style="color:var(--navy)">Message from the Principal</h2>
+    <blockquote class="remark mb-2">"Every child has a spark. Our job is to find it, protect it and help it grow. At Lagoon Crest we pair high academic standards with real warmth, so that students leave ready for university and for life."</blockquote>
+    <strong>Mrs. Folake Adebayo</strong> <small class="text-secondary">· Principal (sample)</small>
+   </div>
+  </div>
+
+  <h2 class="section-title text-center mb-4">Our Story</h2>
+  <ul class="steps mb-5 mx-auto" style="max-width:640px">
+   <li><strong>2001:</strong> Lagoon Crest opens with 40 nursery pupils.</li>
+   <li><strong>2008:</strong> Primary and Junior Secondary sections are added.</li>
+   <li><strong>2015:</strong> The Senior Secondary block, science labs and ICT centre are completed.</li>
+   <li><strong>2026:</strong> The digital portal launches for results and fee payments.</li>
+  </ul>
+
+  <h2 class="section-title text-center mb-4">Leadership Team</h2>
+  <div class="row g-3">
+   <div class="col-6 col-lg-3"><div class="team-card"><div class="avatar">FA</div><strong>Mrs. F. Adebayo</strong><br><small class="text-secondary">Principal</small></div></div>
+   <div class="col-6 col-lg-3"><div class="team-card"><div class="avatar">KO</div><strong>Mr. K. Okonkwo</strong><br><small class="text-secondary">Vice Principal, Academics</small></div></div>
+   <div class="col-6 col-lg-3"><div class="team-card"><div class="avatar">SM</div><strong>Mrs. S. Musa</strong><br><small class="text-secondary">Head, Primary</small></div></div>
+   <div class="col-6 col-lg-3"><div class="team-card"><div class="avatar">DA</div><strong>Mr. D. Alabi</strong><br><small class="text-secondary">Bursar</small></div></div>
+  </div>
+ </div>
+</main>
+
+<!-- ACADEMICS -->
+<main id="academics-view" class="view">
+ <section class="page-hero"><div class="container"><div class="eyebrow mb-2">Academics</div><h1>Rigorous learning, personal attention</h1><p>We blend the Nigerian national curriculum with enrichment in technology, languages and leadership.</p></div></section>
+ <div class="container py-5">
+  <div class="row g-3 g-md-4 mb-5">
+   <div class="col-12 col-md-6"><div class="prog-card"><div class="ic">🧸</div><h3>Nursery (Ages 2–5)</h3><p class="text-secondary mb-0">Phonics, early numeracy, creative play, music and social skills.</p></div></div>
+   <div class="col-12 col-md-6"><div class="prog-card"><div class="ic">📚</div><h3>Primary 1–6</h3><p class="text-secondary mb-0">English, Mathematics, Basic Science, Social Studies, Computer Studies, Yoruba and French. Prepares pupils for common entrance.</p></div></div>
+   <div class="col-12 col-md-6"><div class="prog-card"><div class="ic">🔬</div><h3>Junior Secondary (JSS 1–3)</h3><p class="text-secondary mb-0">Core subjects plus Business Studies, Agricultural Science and Basic Technology. Leads to the BECE.</p></div></div>
+   <div class="col-12 col-md-6"><div class="prog-card"><div class="ic">🎓</div><h3>Senior Secondary (SSS 1–3)</h3><p class="text-secondary mb-0">Science, Arts and Commercial tracks. WAEC, NECO and UTME preparation with mock exams.</p></div></div>
+  </div>
+
+  <h2 class="section-title text-center mb-4">Senior Secondary Tracks</h2>
+  <div class="accordion mb-5" id="trackAcc">
+   <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#t1">🔬 Science</button></h3><div id="t1" class="accordion-collapse collapse show" data-bs-parent="#trackAcc"><div class="accordion-body">Mathematics, English, Physics, Chemistry, Biology, Further Mathematics, Civic Education.</div></div></div>
+   <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#t2">🎭 Arts</button></h3><div id="t2" class="accordion-collapse collapse" data-bs-parent="#trackAcc"><div class="accordion-body">Literature, Government, History, CRS/IRS, Economics, English, Mathematics, Civic Education.</div></div></div>
+   <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#t3">💼 Commercial</button></h3><div id="t3" class="accordion-collapse collapse" data-bs-parent="#trackAcc"><div class="accordion-body">Accounting, Commerce, Economics, Business Studies, English, Mathematics, Civic Education.</div></div></div>
+  </div>
+
+  <h2 class="section-title text-center mb-4">Beyond the Classroom</h2>
+  <div class="row g-3 mb-5">
+   <div class="col-6 col-md-3"><div class="feature text-center"><div class="ic mx-auto">⚽</div><strong>Sports</strong><br><small class="text-secondary">Football, athletics, basketball</small></div></div>
+   <div class="col-6 col-md-3"><div class="feature text-center"><div class="ic mx-auto">💻</div><strong>Coding Club</strong><br><small class="text-secondary">Robotics and web basics</small></div></div>
+   <div class="col-6 col-md-3"><div class="feature text-center"><div class="ic mx-auto">🎶</div><strong>Music &amp; Drama</strong><br><small class="text-secondary">Choir, band, stage</small></div></div>
+   <div class="col-6 col-md-3"><div class="feature text-center"><div class="ic mx-auto">🗣️</div><strong>Debate</strong><br><small class="text-secondary">Public speaking, MUN</small></div></div>
+  </div>
+
+  <h2 class="section-title text-center mb-4">Academic Calendar 2026/2027</h2>
+  <div class="card-lc"><div class="table-responsive"><table class="table table-striped mb-0 text-center report-table">
+   <thead><tr><th>Term</th><th>Resumption</th><th>Mid-term break</th><th>Vacation</th></tr></thead>
+   <tbody>
+    <tr><td class="fw-semibold">1st Term</td><td>14 Sep 2026</td><td>26–30 Oct 2026</td><td>18 Dec 2026</td></tr>
+    <tr><td class="fw-semibold">2nd Term</td><td>11 Jan 2027</td><td>15–19 Feb 2027</td><td>2 Apr 2027</td></tr>
+    <tr><td class="fw-semibold">3rd Term</td><td>26 Apr 2027</td><td>31 May–4 Jun 2027</td><td>23 Jul 2027</td></tr>
+   </tbody></table></div></div>
+ </div>
+</main>
+
+<!-- ADMISSIONS -->
+<main id="admissions-view" class="view">
+ <section class="page-hero"><div class="container"><div class="eyebrow mb-2">Admissions</div><h1>Join the Lagoon Crest family</h1><p>Applications for 2026/2027 are open for Nursery to SSS 2.</p></div></section>
+ <div class="container py-5">
+  <div class="row g-4">
+   <div class="col-12 col-lg-5">
+    <h2 class="h4 mb-4" style="color:var(--navy)">How to Apply</h2>
+    <ol class="steps">
+     <li><strong>Submit the online form.</strong> Takes about 5 minutes.</li>
+     <li><strong>Entrance assessment.</strong> A short test and informal interview.</li>
+     <li><strong>Offer of admission.</strong> Results are sent by email within 3 working days.</li>
+     <li><strong>Accept and pay.</strong> Pay the acceptance fee online to secure the place.</li>
+    </ol>
+    <h3 class="h5 mt-3" style="color:var(--navy)">Documents Needed</h3>
+    <ul class="text-secondary"><li>Birth certificate or age declaration</li><li>Last two report cards</li><li>2 passport photographs</li><li>Immunisation record</li></ul>
+
+    <h3 class="h5 mt-4" style="color:var(--navy)">Sample Fee Schedule (per term)</h3>
+    <div class="card-lc"><table class="table table-sm mb-0">
+     <tbody>
+      <tr><td>Nursery</td><td class="text-end fw-semibold">₦120,000</td></tr>
+      <tr><td>Primary</td><td class="text-end fw-semibold">₦150,000</td></tr>
+      <tr><td>Junior Secondary</td><td class="text-end fw-semibold">₦170,000</td></tr>
+      <tr><td>Senior Secondary</td><td class="text-end fw-semibold">₦185,000</td></tr>
+     </tbody></table></div>
+    <small class="text-secondary">Figures are illustrative for this prototype.</small>
+   </div>
+
+   <div class="col-12 col-lg-7">
+    <section class="card-lc">
+     <div class="card-header"><h2 class="h5 mb-0" style="color:var(--navy)">📝 Online Application Form</h2></div>
+     <div class="card-body p-4">
+      <form id="admission-form" class="needs-validation" novalidate onsubmit="return submitAdmission(event)">
+       <h3 class="h6 text-uppercase text-secondary">Child</h3>
+       <div class="row g-3 mb-3">
+        <div class="col-12"><label class="form-label" for="aName">Full name</label><input id="aName" class="form-control" required minlength="3"><div class="invalid-feedback">Please enter your child's full name.</div></div>
+        <div class="col-6"><label class="form-label" for="aDob">Date of birth</label><input id="aDob" type="date" class="form-control" required><div class="invalid-feedback">Required.</div></div>
+        <div class="col-6"><label class="form-label" for="aGender">Gender</label><select id="aGender" class="form-select" required><option value="">Select</option><option>Female</option><option>Male</option></select><div class="invalid-feedback">Required.</div></div>
+        <div class="col-12 col-sm-6"><label class="form-label" for="aClass">Class applying for</label>
+         <select id="aClass" class="form-select" required><option value="">Select</option><option>Nursery</option><option>Primary 1–3</option><option>Primary 4–6</option><option>JSS 1</option><option>JSS 2–3</option><option>SSS 1</option><option>SSS 2</option></select><div class="invalid-feedback">Required.</div></div>
+        <div class="col-12 col-sm-6"><label class="form-label" for="aPrev">Previous school <span class="text-secondary">(optional)</span></label><input id="aPrev" class="form-control"></div>
+       </div>
+       <h3 class="h6 text-uppercase text-secondary">Parent / Guardian</h3>
+       <div class="row g-3 mb-3">
+        <div class="col-12"><label class="form-label" for="aParent">Full name</label><input id="aParent" class="form-control" required><div class="invalid-feedback">Required.</div></div>
+        <div class="col-12 col-sm-6"><label class="form-label" for="aPhone">Phone</label><input id="aPhone" type="tel" class="form-control" pattern="^(\+234|0)[0-9]{10}$" placeholder="0801 234 5678" required><div class="invalid-feedback">Enter a valid Nigerian number, e.g. 08012345678.</div></div>
+        <div class="col-12 col-sm-6"><label class="form-label" for="aEmail">Email</label><input id="aEmail" type="email" class="form-control" required><div class="invalid-feedback">Enter a valid email.</div></div>
+        <div class="col-12"><label class="form-label" for="aTest">Preferred assessment date</label>
+         <select id="aTest" class="form-select" required><option value="">Select</option><option>Sat, 21 Nov 2026</option><option>Sat, 6 Feb 2027</option><option>Sat, 8 May 2027</option></select><div class="invalid-feedback">Pick a date.</div></div>
+       </div>
+       <div class="form-check mb-3"><input class="form-check-input" type="checkbox" id="aConsent" required><label class="form-check-label small" for="aConsent">I confirm the details are correct and agree to be contacted by the school.</label><div class="invalid-feedback">Please confirm to continue.</div></div>
+       <button class="btn btn-gold btn-lg w-100" type="submit">Submit Application</button>
+      </form>
+      <div id="admission-success" class="text-center d-none">
+       <div class="display-3">🎉</div>
+       <h3 class="h4" style="color:var(--navy)">Application received</h3>
+       <p class="text-secondary mb-1">Your reference number is</p>
+       <p class="h4 fw-bold" id="admission-ref"></p>
+       <p class="small text-secondary">We'll email you assessment details shortly. (Demo: stored in this browser only.)</p>
+       <button class="btn btn-navy" onclick="resetAdmission()">Start another application</button>
+      </div>
+     </div>
+    </section>
+   </div>
+  </div>
+
+  <h2 class="section-title text-center my-5">Frequently Asked Questions</h2>
+  <div class="accordion mx-auto" id="faqAcc" style="max-width:820px">
+   <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button" data-bs-toggle="collapse" data-bs-target="#f1">Is there a school bus service?</button></h3><div id="f1" class="accordion-collapse collapse show" data-bs-parent="#faqAcc"><div class="accordion-body">Yes. Buses cover Badagry, Ajara, Mile 2 and Festac routes. Fees depend on distance.</div></div></div>
+   <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f2">Do you offer boarding?</button></h3><div id="f2" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">Boarding is available from JSS 1 for boys and girls in separate, supervised hostels.</div></div></div>
+   <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f3">Can fees be paid in instalments?</button></h3><div id="f3" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">Yes. A two-part payment plan per term is available through the online fee portal.</div></div></div>
+   <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f4">How do I see my child's results?</button></h3><div id="f4" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">Log in to the Student Portal with your admission number to view and download the digital report card.</div></div></div>
+   <div class="accordion-item"><h3 class="accordion-header"><button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#f5">Is there a scholarship programme?</button></h3><div id="f5" class="accordion-collapse collapse" data-bs-parent="#faqAcc"><div class="accordion-body">Merit scholarships are awarded to top scorers in the entrance assessment each year.</div></div></div>
+  </div>
+ </div>
+</main>
+
+<!-- NEWS & EVENTS -->
+<main id="news-view" class="view">
+ <section class="page-hero"><div class="container"><div class="eyebrow mb-2">News &amp; Events</div><h1>Life at Lagoon Crest</h1><p>Announcements, achievements and what's coming up on campus.</p></div></section>
+ <div class="container py-5">
+  <div class="row g-4">
+   <div class="col-12 col-lg-8">
+    <h2 class="h4 mb-3" style="color:var(--navy)">Latest News</h2>
+    <div class="row g-3" id="news-list"></div>
+   </div>
+   <div class="col-12 col-lg-4">
+    <h2 class="h4 mb-3" style="color:var(--navy)">Upcoming Events</h2>
+    <div id="events-list"></div>
+   </div>
+  </div>
+ </div>
+</main>
+
+<!-- GALLERY -->
+<main id="gallery-view" class="view">
+ <section class="page-hero"><div class="container"><div class="eyebrow mb-2">Gallery</div><h1>A look inside our campus</h1><p>Facilities, sports and celebrations. Tap any tile to enlarge. (Sample tiles stand in for photographs.)</p></div></section>
+ <div class="container py-5">
+  <div class="d-flex flex-wrap gap-2 justify-content-center mb-4" id="gallery-filters"></div>
+  <div class="row g-3" id="gallery-grid"></div>
+ </div>
+</main>
+
+<!-- CONTACT -->
+<main id="contact-view" class="view">
+ <section class="page-hero"><div class="container"><div class="eyebrow mb-2">Contact</div><h1>We'd love to hear from you</h1><p>Questions, tours or feedback. Our team replies within one working day.</p></div></section>
+ <div class="container py-5">
+  <div class="row g-4">
+   <div class="col-12 col-lg-5">
+    <div class="d-grid gap-3">
+     <div class="contact-box"><div class="ic">📍</div><div><strong>Address</strong><br><span class="text-secondary">Lagoon Crest Schools, Badagry, Lagos State, Nigeria</span></div></div>
+     <div class="contact-box"><div class="ic">📞</div><div><strong>Phone</strong><br><a href="tel:+2348000000000" class="text-secondary">+234 800 000 0000</a></div></div>
+     <div class="contact-box"><div class="ic">✉️</div><div><strong>Email</strong><br><a href="mailto:info@lagooncrest.example" class="text-secondary">info@lagooncrest.example</a></div></div>
+     <div class="contact-box"><div class="ic">🕗</div><div><strong>Office hours</strong><br><span class="text-secondary">Mon–Fri 7:30am–4:30pm · Sat 9am–1pm</span></div></div>
+    </div>
+   </div>
+   <div class="col-12 col-lg-7">
+    <section class="card-lc">
+     <div class="card-header"><h2 class="h5 mb-0" style="color:var(--navy)">Send us a message</h2></div>
+     <div class="card-body p-4">
+      <form id="contact-form" class="needs-validation" novalidate onsubmit="return submitContact(event)">
+       <div class="row g-3">
+        <div class="col-12 col-sm-6"><label class="form-label" for="cName">Name</label><input id="cName" class="form-control" required><div class="invalid-feedback">Required.</div></div>
+        <div class="col-12 col-sm-6"><label class="form-label" for="cEmail">Email</label><input id="cEmail" type="email" class="form-control" required><div class="invalid-feedback">Enter a valid email.</div></div>
+        <div class="col-12"><label class="form-label" for="cSubject">Subject</label><select id="cSubject" class="form-select" required><option value="">Select</option><option>Admissions enquiry</option><option>Book a campus tour</option><option>Fees and payments</option><option>Other</option></select><div class="invalid-feedback">Required.</div></div>
+        <div class="col-12"><label class="form-label" for="cMsg">Message</label><textarea id="cMsg" rows="4" class="form-control" required minlength="10"></textarea><div class="invalid-feedback">Please write at least 10 characters.</div></div>
+        <div class="col-12"><button class="btn btn-gold btn-lg w-100" type="submit">Send Message</button></div>
+       </div>
+      </form>
+      <div id="contact-success" class="alert alert-success mt-3 d-none mb-0" role="status">Thank you! Your message has been sent (demo).</div>
+     </div>
+    </section>
+   </div>
+  </div>
+  <div class="card-lc mt-4 ratio ratio-21x9" style="min-height:280px">
+   <iframe title="Map of Badagry, Lagos" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Badagry%2C%20Lagos&amp;z=12&amp;output=embed"></iframe>
+  </div>
+ </div>
+</main>
+
+<!-- FOOTER -->
+<footer class="site pt-5 pb-3 no-print">
+ <div class="container">
+  <div class="row g-4 mb-4">
+   <div class="col-12 col-lg-4">
+    <div class="d-flex align-items-center gap-2 mb-2"><span class="crest">LC</span><strong class="text-white brand-font fs-5">Lagoon Crest Schools</strong></div>
+    <p class="small mb-3">Nurturing confident, capable and ethical leaders in Badagry since 2001.</p>
+    <form class="d-flex gap-2" onsubmit="return subscribe(event)">
+     <input type="email" class="form-control form-control-sm" placeholder="Newsletter email" aria-label="Newsletter email" required>
+     <button class="btn btn-gold btn-sm">Subscribe</button>
+    </form>
+    <div id="sub-msg" class="small mt-2 text-warning d-none">Subscribed. Thank you!</div>
+   </div>
+   <div class="col-6 col-lg-2">
+    <h4 class="mb-3">School</h4>
+    <ul class="list-unstyled small d-grid gap-2">
+     <li><a href="#about" onclick="showView('about-view');return false;">About</a></li>
+     <li><a href="#academics" onclick="showView('academics-view');return false;">Academics</a></li>
+     <li><a href="#admissions" onclick="showView('admissions-view');return false;">Admissions</a></li>
+     <li><a href="#gallery" onclick="showView('gallery-view');return false;">Gallery</a></li>
+    </ul>
+   </div>
+   <div class="col-6 col-lg-3">
+    <h4 class="mb-3">Quick Links</h4>
+    <ul class="list-unstyled small d-grid gap-2">
+     <li><a href="#portal" onclick="showView('portal-view');return false;">Student Portal</a></li>
+     <li><a href="#teacher" onclick="showView('teacher-view');return false;">Teacher Dashboard</a></li>
+     <li><a href="#news" onclick="showView('news-view');return false;">News &amp; Events</a></li>
+     <li><a href="#" data-bs-toggle="modal" data-bs-target="#payModal">Pay Fees</a></li>
+    </ul>
+   </div>
+   <div class="col-12 col-lg-3">
+    <h4 class="mb-3">Contact</h4>
+    <ul class="list-unstyled small d-grid gap-2">
+     <li>📍 Badagry, Lagos State</li>
+     <li>📞 +234 800 000 0000</li>
+     <li>✉️ info@lagooncrest.example</li>
+    </ul>
+   </div>
+  </div>
+  <hr class="border-secondary">
+  <div class="small text-center">© 2026 Lagoon Crest Schools, Badagry. Prototype for demonstration purposes. Names, numbers and figures are sample data.</div>
+ </div>
+</footer>
+
+<a class="float-wa no-print" href="https://wa.me/2348000000000?text=Hello%20Lagoon%20Crest%20Schools" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">💬</a>
+<button class="back-top no-print" id="backTop" aria-label="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">↑</button>
+
+<!-- GALLERY MODAL -->
+<div class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galTitle" aria-hidden="true">
+ <div class="modal-dialog modal-dialog-centered modal-lg">
+  <div class="modal-content border-0 rounded-4 overflow-hidden">
+   <div class="modal-header"><h5 class="modal-title" id="galTitle"></h5><button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button></div>
+   <div class="modal-body p-0"><div id="galBig" class="d-flex align-items-center justify-content-center text-white" style="height:55vh;font-size:6rem"></div></div>
+  </div>
+ </div>
+</div>
 
 <!-- LOGIN MODAL -->
 <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginTitle" aria-hidden="true">
@@ -345,6 +773,10 @@ footer.site{background:var(--navy);color:rgba(255,255,255,.75);border-top:3px so
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 <script>
+const SLUGS={
+  'landing-view':'home','about-view':'about','academics-view':'academics','admissions-view':'admissions',
+  'news-view':'news','gallery-view':'gallery','contact-view':'contact','portal-view':'portal','teacher-view':'teacher'
+};
 const subjects = [
   {name:'Mathematics', ca:27, exam:62},
   {name:'English Language', ca:24, exam:55},
@@ -368,12 +800,24 @@ function ordinal(n){
 }
 
 function showView(id){
+  const slug=SLUGS[id]||'home';
+  if(location.hash.slice(1)!==slug){ location.hash=slug; } else { activateView(id); }
+}
+
+function activateView(id){
   document.querySelectorAll('.view').forEach(v=>v.classList.toggle('active', v.id===id));
   document.querySelectorAll('[data-nav]').forEach(a=>a.classList.toggle('active', a.dataset.nav===id));
   const nav=document.getElementById('mainNav');
   if(nav.classList.contains('show')) bootstrap.Collapse.getOrCreateInstance(nav).hide();
   window.scrollTo({top:0,behavior:'smooth'});
 }
+
+function routeFromHash(){
+  const slug=location.hash.slice(1)||'home';
+  const id=Object.keys(SLUGS).find(k=>SLUGS[k]===slug)||'landing-view';
+  activateView(id);
+}
+window.addEventListener('hashchange',routeFromHash);
 
 function hideModal(id){
   const el=document.getElementById(id);
@@ -453,7 +897,116 @@ document.getElementById('payModal').addEventListener('hidden.bs.modal',()=>{
 
 renderReport();
 updatePositions();
-document.querySelector('[data-nav="landing-view"]').classList.add('active');
+
+const newsData=[
+  {icon:'🏆',tag:'Achievement',date:'28 Sep 2026',title:'SSS 3 students record 98% credit passes',text:'Our 2026 graduating class posted the school\'s best WAEC results, with 41 students scoring A1 in Mathematics.'},
+  {icon:'💻',tag:'Campus',date:'15 Sep 2026',title:'New ICT lab and digital portal launched',text:'Parents can now view results, pay fees and download receipts online from any phone.'},
+  {icon:'⚽',tag:'Sports',date:'6 Sep 2026',title:'Inter-House Sports Day returns 24 October',text:'Four houses compete in track and field, football and the tug-of-war finale. Parents are welcome.'},
+  {icon:'🎭',tag:'Arts',date:'30 Aug 2026',title:'Drama club wins Lagos Schools Festival',text:'Our students took first place with an original play about the history of Badagry.'},
+  {icon:'🔬',tag:'Academics',date:'18 Aug 2026',title:'Science fair celebrates young innovators',text:'Over 60 projects from JSS and SSS students on clean energy, water and agriculture.'},
+  {icon:'🤝',tag:'Community',date:'2 Aug 2026',title:'Students lead beach clean-up in Badagry',text:'More than 200 volunteers collected two tonnes of waste along the lagoon front.'}
+];
+const eventsData=[
+  {d:'24',m:'Oct',title:'Inter-House Sports Day',meta:'8:00am · School field'},
+  {d:'26',m:'Oct',title:'Mid-term break begins',meta:'Resume 2 Nov'},
+  {d:'14',m:'Nov',title:'Open Day and campus tour',meta:'10:00am · Main hall'},
+  {d:'21',m:'Nov',title:'Entrance assessment',meta:'9:00am · Admissions block'},
+  {d:'11',m:'Dec',title:'Carol service and award night',meta:'5:00pm · Main hall'},
+  {d:'18',m:'Dec',title:'1st term vacation',meta:'Resume 11 Jan'}
+];
+const galleryData=[
+  {cat:'Campus',icon:'🏫',title:'Main building',bg:'#0d233a,#16375a'},
+  {cat:'Campus',icon:'📖',title:'Library',bg:'#16375a,#2a5a8a'},
+  {cat:'Campus',icon:'💻',title:'ICT lab',bg:'#0d233a,#2a5a8a'},
+  {cat:'Sports',icon:'⚽',title:'Football pitch',bg:'#146c43,#198754'},
+  {cat:'Sports',icon:'🏃',title:'Athletics',bg:'#b8932a,#d4af37'},
+  {cat:'Academics',icon:'🔬',title:'Science lab',bg:'#5a2a8a,#7a4aaa'},
+  {cat:'Academics',icon:'🧮',title:'Maths Olympiad',bg:'#16375a,#0d233a'},
+  {cat:'Events',icon:'🎓',title:'Graduation day',bg:'#b8932a,#8a6d1a'},
+  {cat:'Events',icon:'🎭',title:'Drama night',bg:'#8a2a4a,#aa4a6a'},
+  {cat:'Events',icon:'🎶',title:'Cultural day',bg:'#c2562a,#d9731a'},
+  {cat:'Campus',icon:'🍽️',title:'Dining hall',bg:'#2a5a5a,#3a7a7a'},
+  {cat:'Sports',icon:'🏀',title:'Basketball court',bg:'#d9731a,#b85a0a'}
+];
+
+function newsCard(n){
+  return `<div class="col-12 col-md-6"><article class="news-card"><div class="news-thumb">${n.icon}</div><div class="body"><div class="mb-2"><span class="tag">${n.tag}</span> <small class="text-secondary ms-1">${n.date}</small></div><h3 class="h6" style="color:var(--navy)">${n.title}</h3><p class="small text-secondary mb-0">${n.text}</p></div></article></div>`;
+}
+
+function renderNews(){
+  document.getElementById('news-list').innerHTML=newsData.map(newsCard).join('');
+  document.getElementById('home-news').innerHTML=newsData.slice(0,3).map(n=>newsCard(n).replace('col-md-6','col-md-4')).join('');
+  document.getElementById('events-list').innerHTML=eventsData.map(e=>`<div class="event-item"><div class="event-date"><b>${e.d}</b><small>${e.m}</small></div><div><strong>${e.title}</strong><br><small class="text-secondary">${e.meta}</small></div></div>`).join('');
+}
+
+function renderGallery(filter='All'){
+  const cats=['All',...new Set(galleryData.map(g=>g.cat))];
+  document.getElementById('gallery-filters').innerHTML=cats.map(c=>`<button class="btn btn-outline-dark btn-sm filter-btn ${c===filter?'active':''}" onclick="renderGallery('${c}')">${c}</button>`).join('');
+  document.getElementById('gallery-grid').innerHTML=galleryData.map((g,i)=>({g,i})).filter(o=>filter==='All'||o.g.cat===filter).map(o=>
+    `<div class="col-6 col-md-4 col-lg-3"><button class="gal-tile" style="background:linear-gradient(135deg,${o.g.bg})" onclick="openGallery(${o.i})" aria-label="Enlarge ${o.g.title}">${o.g.icon}<span>${o.g.title}</span></button></div>`).join('');
+}
+
+function openGallery(i){
+  const g=galleryData[i];
+  document.getElementById('galTitle').textContent=g.title+' · '+g.cat;
+  const big=document.getElementById('galBig');
+  big.style.background=`linear-gradient(135deg,${g.bg})`;
+  big.textContent=g.icon;
+  bootstrap.Modal.getOrCreateInstance(document.getElementById('galleryModal')).show();
+}
+
+function checkForm(form){
+  form.classList.add('was-validated');
+  return form.checkValidity();
+}
+
+function submitAdmission(e){
+  e.preventDefault();
+  const form=e.target;
+  if(!checkForm(form)) return false;
+  const ref='LCS-APP-'+Date.now().toString().slice(-6);
+  const apps=JSON.parse(localStorage.getItem('lcsApplications')||'[]');
+  apps.push({ref,child:document.getElementById('aName').value,cls:document.getElementById('aClass').value,at:new Date().toISOString()});
+  localStorage.setItem('lcsApplications',JSON.stringify(apps));
+  document.getElementById('admission-ref').textContent=ref;
+  form.classList.add('d-none');
+  document.getElementById('admission-success').classList.remove('d-none');
+  return false;
+}
+
+function resetAdmission(){
+  const form=document.getElementById('admission-form');
+  form.reset();
+  form.classList.remove('was-validated','d-none');
+  document.getElementById('admission-success').classList.add('d-none');
+}
+
+function submitContact(e){
+  e.preventDefault();
+  const form=e.target;
+  if(!checkForm(form)) return false;
+  form.reset();
+  form.classList.remove('was-validated');
+  const m=document.getElementById('contact-success');
+  m.classList.remove('d-none');
+  setTimeout(()=>m.classList.add('d-none'),4000);
+  return false;
+}
+
+function subscribe(e){
+  e.preventDefault();
+  e.target.reset();
+  document.getElementById('sub-msg').classList.remove('d-none');
+  return false;
+}
+
+window.addEventListener('scroll',()=>{
+  document.getElementById('backTop').classList.toggle('show',window.scrollY>400);
+},{passive:true});
+
+renderNews();
+renderGallery();
+routeFromHash();
 </script>
 </body>
 </html>
